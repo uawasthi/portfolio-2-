@@ -1,0 +1,69 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h2>Andrew</h2>
+</head>
+<body>
+<div class ="img5">
+<h4> PROJECTS </h4>
+<div class="tab">
+  <button class="tablinks" onclick="openProject(event, 'Project1')">Automated Odour leakage detecting and tracking Bot</button>
+  <button class="tablinks" onclick="openProject(event, 'Project2')">Library Management System</button>
+  <button class="tablinks" onclick="openProject(event, 'Project3')">Smart HomeTheft System</button>
+  </div>
+  <div id="Project1" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Automated Odour leakage detecting and tracking Bot</h3>
+  <p>This is a smart solution for detecting odour leaks during any natural hazard.The technologies used 
+  are IOT and Matlab .</p>
+</div>
+<div id="Project2" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Libraray Management System</h3>
+  <p>This is a CRUD application developed for online management of library .The technology used is UI and Spring MVC and ,JAVA BEANS.</p>
+</div>
+<div id="Project3" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Smart HomeTheft System</h3>
+  <p>This  application is developed for management of home thefts .The technology used is UI , sensorics ,controllers etc .</p>
+</div>
+</div>
+
+<div class="img6">
+<h2> <font color="white">Certifications</font></h2>
+<div class="transform1" >
+<p>
+1.MCSD, Microsoft Certified Solution Developer<br>
+2.MCAD, Microsoft Certified Applications Developer<br>
+3.CMST, Certified Manager of Software Testing<br>
+</p>
+</div>
+<br>
+<h2> <font color="white">Skills</font></h2>
+<div class="transform1" >
+<p>
+1.Manage Multiple Projects in Deadline-Driven Environments.<br>
+2.Work Well with Teams.<br>
+3.Understand Software Engineering Best Practices.<br>
+</p>
+</div>
+</div>
+<script>
+function openProject(evt, projName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(projName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
